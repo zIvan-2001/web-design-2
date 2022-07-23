@@ -7,10 +7,15 @@
     justify-content: space-evenly;
     flex-direction: column;
     color: #fff;
+    text-align: center;
     &__copy{
         font-size: 1.2rem;
     }
     &__icon{
+        & a {
+            text-decoration: none;
+            color: #Ffff;
+        }
         & i {
             padding: 0 1rem;
             font-size: 1.5rem;

@@ -111,6 +111,11 @@
     margin-left: 0.5rem;
   }
 }
+@media (max-width: 500px) {
+  .header__logo--text {
+    display: none;
+  }
+}
 .main {
   background-image: url(../img/pizza.jpg);
   background-size: cover;
@@ -244,9 +249,14 @@
   justify-content: space-evenly;
   flex-direction: column;
   color: #fff;
+  text-align: center;
 }
 .footer__copy {
   font-size: 1.2rem;
+}
+.footer__icon a {
+  text-decoration: none;
+  color: white;
 }
 .footer__icon i {
   padding: 0 1rem;

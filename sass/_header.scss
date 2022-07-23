@@ -123,3 +123,14 @@
         }
     }
 }
+
+@media (max-width:500px){
+    .header{
+        &__logo{
+            &--text {
+                display: none;
+            }
+        }
+    }
+}
+
