@@ -1,0 +1,125 @@
+.header {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    transition: 0.5s;
+    &__logo{
+        display: flex;
+        align-items: center;
+        &--image {
+            width: 2.5rem;
+        }
+        &--text {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            font-weight: bold;
+        }
+    }
+    &__nav{
+        &--a{
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+            padding: 0 1.5rem;
+            font-size: 150;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &--a:hover{
+            color: #F44A25;
+        }
+    }
+    &__icon{
+      &--i{
+          font-size: 1.2rem;
+          padding: 0 1rem;
+          cursor: pointer;
+          transition: 0.5s;
+      }
+      &--ico:hover {
+          color: #F44A25;
+      }
+      &--button{
+          background: #F44A25;
+          border: none;
+          padding: 0.7rem 1.2rem;
+          font-size: 1.2rem;
+          border-radius: 1rem;
+          color: #fff;
+          cursor: pointer;
+      }
+      & .fa-bars{
+          display: none;
+      }
+    }
+}   
+
+@media (max-width:1422px){
+    .header{
+        padding: 0 5rem;
+        &__nav{
+            &--a{
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:1100px){
+    .header{
+        padding: 0 3rem;
+        &__nav{
+            position: fixed;
+            background: #2a2a2a;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            left: 100%;
+            margin-top: 5rem;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            transition: 0.5s;
+            &--a{
+                color: #fff;
+                padding: 1rem 1rem;
+                font-size: 1.5rem;
+                margin: 1.5rem 0;
+                transition: 0.5s;
+            }
+            &--a:hover{
+                color: #fff;
+                background: #F44A25;
+                border-radius: 1rem;
+            }
+        }
+        &__responsive{
+            left: 0;
+        }
+        &__icon{
+            &--i{
+                padding: 0 0.5rem;
+            }
+            & .fa-bars{
+                display: inline-block;
+            } 
+            &--button{
+                padding: 0.6rem 1.1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:750px){
+    .header{
+        padding: 0 2rem;
+        &__logo{
+            &--text {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.section{
+    margin: 4rem 0;
+    text-align: center;
+    &__txt{
+        margin: 3rem 0;
+        font-size: 2.5rem;
+        color: #F44A25;
+        font-weight: bold;
+    }
+    &__box{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        transition: 0.5s;
+        flex-wrap: wrap;
+        & img{
+            margin: 1rem 0;
+            width: 15rem;
+        }
+        &--info{
+            width: 20rem;
+            border-radius: 1rem;
+            transition: 0.5s;
+            box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+            &_txt{
+                &-title{
+                    color: #F44A25;
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+                &-txt{
+                    color: #555555;
+                    margin: 0.5rem 0;
+                    font-size: 1rem;
+                }
+                &-price{
+                    margin: 1rem 0;
+                    font-size: 1.5rem;
+                }
+            }
+            &_button{
+                cursor: pointer;
+                margin: 1rem;
+                padding: 1rem 2rem;
+                border: none;
+                color: #fff;
+                border-radius: 0.5rem;
+                font-size: 1.2rem;
+                background: #F44A25;
+            }
+        }
+        &--info:hover{
+            transform: scale(1.05);
+        }
+
+    }
+}
+
+@media (max-width:1300px){
+    .section{
+        &__box{
+            gap: 3rem;
+        }
+    }
+}
+
+
+/* @media (max-width:1300px){
+    .section{
+        &__box{
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+    }
+} */
